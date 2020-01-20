@@ -1,0 +1,32 @@
+Ref1:
+console output = 
+before [1,2,3] [1,2,3]
+after [100,2,3] [100,2,3]
+Q3: yes line 5 affects x because y is refering to the same list as x. thus the y[0] changes the list that x and y refer to.
+
+
+Ref2:
+console output = 
+before [1,2,3] [1,2,3]
+after [1,2,3] [100,2,3]
+Q3 because we use an operand by asking python to get the values in the list rather then refer to the list-x, list y is independent of x
+
+Ref3: 
+console ouput =
+before [1,2,3] [4,5,6] [1,2,3,4,5,6]
+after [100,2,3] [999,5,6] [1,2,3,4,5,6]
+Q3 no the changes on 6-7 do not affect z because "+" creates a new list rather then refering to either x or y
+
+Ref4: 
+console output = 
+before [[0, 1, 2], [5, 6, 7]] [[10, 11, 12], [15, 16, 17]] [[0, 1, 2], [5, 6, 7], [10, 11, 12], [15, 16, 17]]
+after  [[999, 1, 2], [5, 6, 7]] [[100, 11, 12], [15, 16, 17]] [[999, 1, 2], [5, 6, 7], [100, 11, 12], [15, 16, 17]]
+Q3 yes they affect z because the z has values which are refereces to the smaller list. since x and y also refer to that smaller list it will affect z
+
+Ref5:
+console output = 
+before [0,1,2,0,1,2,0,1,2]
+after [10,1,2,0,1,2,0,1,2]
+the change affects 0th element of x. which is a list of 9 elements. 
+
+Ref6: 
