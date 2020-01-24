@@ -1,0 +1,27 @@
+#Id 11275853
+#NSID Muhammad Usman Ahmed
+## L02
+
+
+Error in find_duplicates: expected [] but obtained [1] -- Longer list with no duplicates
+Error in find_duplicates: expected [1] but obtained [1, 1] -- Longer list with duplicates on the end
+Error in find_duplicates: expected [1, 2, 4, 3] but obtained [1, 1, 1, 2, 4, 3] -- Longer list with many duplicates not sorted
+Error in find_duplicates: expected ['dog', 1] but obtained [1, 1, 1, 2, 4, 3, 'dog', 1] -- Different data types
+Error in find_duplicates: expected [[1, 1]] but obtained [1, 1, 1, 2, 4, 3, 'dog', 1, [1, 1]] -- Testing duplicates of lists
+
+
+
+--------re-orded the tests -----
+
+Error in find_duplicates: expected [] but obtained [1] -- Longer list with no duplicates
+Error in find_duplicates: expected ['dog', 1] but obtained [1, 'dog', 1] -- Different data types
+Error in find_duplicates: expected [[1, 1]] but obtained [1, 'dog', 1, [1, 1]] -- Testing duplicates of lists
+Error in find_duplicates: expected [1] but obtained [1, 'dog', 1, [1, 1], 1] -- Longer list with duplicates on the end
+Error in find_duplicates: expected [1, 2, 4, 3] but obtained [1, 'dog', 1, [1, 1], 1, 1, 2, 4, 3] -- Longer list with many duplicates not sorted
+*** Test script finished ***
+
+
+
+
+--------------fixed the script ------------
+*** Test script finished ***

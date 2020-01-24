@@ -14,6 +14,7 @@ def find_duplicates(alist):
         A list of duplicates from alist
     """
     uniques = []
+    duplicates = []
     for item in alist:
         if item in uniques:
             duplicates.append(item)

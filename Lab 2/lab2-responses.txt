@@ -1,3 +1,8 @@
+#Id 11275853
+#NSID Muhammad Usman Ahmed
+## L02
+
+
 Ref1:
 console output = 
 before [1,2,3] [1,2,3]
@@ -29,4 +34,30 @@ before [0,1,2,0,1,2,0,1,2]
 after [10,1,2,0,1,2,0,1,2]
 the change affects 0th element of x. which is a list of 9 elements. 
 
-Ref6: 
+Ref6:
+console output = 
+before [[0, 1, 2], [0, 1, 2], [0, 1, 2]]
+after  [[10, 1, 2], [10, 1, 2], [10, 1, 2]]
+it affects the first reference of the first list thus affecting all the other lists who depend on that reference
+
+Ref7
+console output = 
+before 5 10
+after  5 4
+global 'a' remains the same because the 'a' in the function is local. 'b' is set to a-1
+
+Ref8
+console output = 
+global scope, before 3 4
+inside swap_ints(), before 3 4
+inside swap_ints(), after  4 3
+global scope, after 3 4
+no 'a' and 'b' did not get swapped as x and y are the same as a and b as integers are not mutable. 
+
+Ref9
+console output = 
+before ['a', 'list', 'of', 'words']
+after  ['a', 'of', 'list', 'words']
+Yes function call on line 10 did affect some list because the function does not create a copy but rather changes the argument list which has the same reference as some_list
+
+Ref10
