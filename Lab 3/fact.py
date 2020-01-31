@@ -9,12 +9,14 @@ def factorial ( n ):
     Return :
     a non - negative integer
     """
-    if n == 0:
-        return 1
-    else:
-        return n * factorial (n -1)
+    prod = 1
+    for i in range (1 , n ):
+        prod = prod * i
+    return prod
+
 
 if factorial(5) == 120:
     print("Function is working")
 else:
-    "this function has a bug"
+    print("this function has a bug")
+    print("expecting 120 instead got",factorial(5))
