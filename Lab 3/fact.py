@@ -1,6 +1,6 @@
 # CMPT 145 Lab03: Version Control
 #
-def factorial( n ):
+def factorial ( n ):
     """
     Purpose :
     Calculate the factorial of a non - negative integer
@@ -9,6 +9,8 @@ def factorial( n ):
     Return :
     a non - negative integer
     """
-    pass
-
+    if n == 0:
+        return 1
+    else:
+        return n * factorial (n -1)
 
