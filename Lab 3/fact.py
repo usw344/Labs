@@ -14,3 +14,5 @@ def factorial ( n ):
         prod = prod * i
     return prod
 
+def foobarism():
+    pass
