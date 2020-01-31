@@ -13,6 +13,3 @@ def factorial ( n ):
     for i in range (1 , n ):
         prod = prod * i
     return prod
-
-def foobarism():
-    pass
