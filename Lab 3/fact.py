@@ -11,7 +11,7 @@ def factorial ( n ):
     """
     prod = 1
     for i in range (1 , n ):
-        prod = prod * i
+        prod += prod * i
     return prod
 
 
