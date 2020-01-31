@@ -14,3 +14,7 @@ def factorial ( n ):
     else:
         return n * factorial (n -1)
 
+if factorial(5) == 120:
+    print("Function is working")
+else:
+    "this function has a bug"
